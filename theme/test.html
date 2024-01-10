@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Countdown Timer</title>
+    <style>
+
+.p-t-42{padding-top:42px;}
+.p-b-4{padding-bottom:4px;}
+.p-b-22{padding-bottom:22px;}
+.p-l-50{padding-left:50px;}
+.p-r-50{padding-right:50px;}
+.m-b-20{margin-bottom:20px;}
+.flex-w,.flex-sa-m,.flex-col-c-m{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;}
+.flex-w{-webkit-flex-wrap:wrap;-moz-flex-wrap:wrap;-ms-flex-wrap:wrap;-o-flex-wrap:wrap;flex-wrap:wrap;}
+.flex-sa-m{justify-content:space-around;-ms-align-items:center;align-items:center;}
+.flex-col-c-m{-ms-align-items:center;align-items:center;justify-content:center;}
+.flex-col-c-m{-webkit-flex-direction:column;-moz-flex-direction:column;-ms-flex-direction:column;-o-flex-direction:column;flex-direction:column;}
+/*! CSS Used from: https://colorlib.com/etc/cs/comingsoon_08/css/main.css */
+.m2-txt2{font-family:PlayfairDisplay-Italic;font-size:18px;color:#fff;line-height:1;}
+.l1-txt2{font-family:Poppins-Light;font-size:70px;color:#fff;line-height:1;}
+.wsize2{width:100px;}
+.bor1{border:2px solid rgba(255,255,255,0.35);}
+@media (max-width: 768px){
+.respon1{padding-left:15px;padding-right:15px;max-width:340px;margin:0 auto;}
+.respon2{display:none;}
+}
+
+    </style>
+       <script>
+        // Set the date and time you want to count down to (format: "Month Day, Year HH:MM:SS")
+        var countdownDate = new Date("December 31, 2023 23:59:59").getTime();
+
+        // Update the countdown every second
+        var x = setInterval(function() {
+            var now = new Date().getTime();
+            var distance = countdownDate - now;
+
+            // Calculate days, hours, minutes, and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Display the countdown values under their respective labels
+            document.getElementById("days").innerHTML = days;
+            document.getElementById("hours").innerHTML = hours;
+            document.getElementById("minutes").innerHTML = minutes;
+            document.getElementById("seconds").innerHTML = seconds;
+
+            // If the countdown is over, display a message
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("countdown").innerHTML = "EXPIRED";
+            }
+        }, 1000); // Update every 1 second
+    </script>
+</head>
+
+<body style="background: rgb(115, 115, 221);">
+    <div class="flex-w flex-sa-m cd100 bor1 p-t-42 p-b-22 p-l-50 p-r-50 respon1">
+        <div class="flex-col-c-m wsize2 m-b-20">
+        <span class="l1-txt2 p-b-4 days" id="days"></span>
+        <span class="m2-txt2">Days</span>
+        </div>
+        <span class="l1-txt2 p-b-22">:</span>
+        <div class="flex-col-c-m wsize2 m-b-20">
+        <span class="l1-txt2 p-b-4 hours" id="hours"></span>
+        <span class="m2-txt2">Hours</span>
+        </div>
+        <span class="l1-txt2 p-b-22 respon2">:</span>
+        <div class="flex-col-c-m wsize2 m-b-20">
+        <span class="l1-txt2 p-b-4 minutes" id="minutes"></span>
+        <span class="m2-txt2">Minutes</span>
+        </div>
+        <span class="l1-txt2 p-b-22">:</span>
+        <div class="flex-col-c-m wsize2 m-b-20">
+        <span class="l1-txt2 p-b-4 seconds" id="seconds"></span>
+        <span class="m2-txt2">Seconds</span>
+        </div>
+    </div>
+    <!-- <div id="countdown-container">
+        <div id="countdown-text">Time Remaining Until New Year:</div>
+        <div class="countdown-item">
+            <div class="countdown-label">Days</div>
+            <div id="days" class="countdown-value"></div>
+        </div>
+        <div class="countdown-item">
+            <div class="countdown-label">Hours</div>
+            <div id="hours" class="countdown-value"></div>
+        </div>
+        <div class="countdown-item">
+            <div class="countdown-label">Minutes</div>
+            <div id="minutes" class="countdown-value"></div>
+        </div>
+        <div class="countdown-item">
+            <div class="countdown-label">Seconds</div>
+            <div id="seconds" class="countdown-value"></div>
+        </div>
+    </div> -->
+
+ 
+</body>
+</html>

@@ -1,0 +1,1384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  ================================================== -->
+  <meta charset="utf-8">
+  <title>23rd GCA</title>
+
+  <!-- Mobile Specific Metas
+  ================================================== -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Event and Conference Html5 Template">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <meta name="author" content="Themefisher">
+  <meta name="generator" content="Themefisher Eventre HTML Template v1.0">
+  
+  <!-- theme meta -->
+  <meta name="theme-name" content="GCA" />
+  
+  <!-- PLUGINS CSS STYLE -->
+  <!-- Bootstrap -->
+  <link href="plugins/bootstrap/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="plugins/font-awsome/css/font-awesome.min.css" rel="stylesheet">
+  <!-- Magnific Popup -->
+  <link href="plugins/magnific-popup/magnific-popup.css" rel="stylesheet">
+  <!-- Slick Carousel -->
+  <link href="plugins/slick/slick.css" rel="stylesheet">
+  <link href="plugins/slick/slick-theme.css" rel="stylesheet">
+  <!-- CUSTOM CSS -->
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/custom.css" rel="stylesheet">
+
+  <!-- FAVICON -->
+  <link href="https://actuariesindia.org/22gca/www.gca.org.in/templates/custom/eregnow/cherag/gca/images/favicon.png" rel="shortcut icon">
+
+
+		   <script>
+			// Set the date and time you want to count down to (format: "Month Day, Year HH:MM:SS")
+			var countdownDate = new Date("February 11, 2024 23:59:59").getTime();
+	
+			// Update the countdown every second
+			var x = setInterval(function() {
+				var now = new Date().getTime();
+				var distance = countdownDate - now;
+	
+				// Calculate days, hours, minutes, and seconds
+				var days = Math.floor(distance / (1000 * 60 * 60 * 24));			
+				var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+				var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+				var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+				// Display the countdown values under their respective labels
+
+				var elements = document.getElementsByClassName("days");
+				var elements1 = document.getElementsByClassName("hours");
+				var elements2 = document.getElementsByClassName("minutes");
+				var elements3 = document.getElementsByClassName("seconds");
+				
+				for (var i = 0; i < elements.length; i++) {
+  						elements[i].innerHTML = days;
+				}
+				for (var j = 0; j < elements1.length; j++) {
+  						elements1[j].innerHTML = hours;
+				}			
+				for (var k = 0; k < elements2.length; k++) {
+  						elements2[k].innerHTML = minutes;
+				}
+				for (var l = 0; l < elements3.length; l++) {
+  						elements3[l].innerHTML = seconds;
+				}
+				
+				// If the countdown is over, display a message
+				if (distance < 0) {
+					clearInterval(x);
+					document.getElementById("countdown").innerHTML = "EXPIRED";
+				}
+			}, 1000); // Update every 1 second
+		</script>
+
+</head>
+
+<body class="body-wrapper">
+
+
+<!--========================================
+=            Navigation Section            =
+=========================================-->
+<nav class="navbar main-nav border-less fixed-top navbar-expand-lg p-0">
+  <div class="container-fluid p-0">
+    <!-- logo -->
+    <a class="navbar-brand" href="index.html" style="padding: 5px 33px;">
+	<img src="images/gca-logo.png" alt="logo" style="width: 100%;">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="fa fa-bars"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <!-- <ul class="navbar-nav mx-auto">
+      
+		
+			<li class="nav-item active">
+				<a class="nav-link" href="index.html">About
+					<span>/</span>
+				</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="index.html">Organising Group
+					<span>/</span>
+				</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="index.html">Programs
+					<span>/</span>
+				</a>
+			</li><li class="nav-item">
+				<a class="nav-link" href="index.html">Partnership Category
+					<span>/</span>
+				</a>
+			</li><li class="nav-item">
+				<a class="nav-link" href="index.html">Accomodation
+					
+				</a>
+			</li>
+       
+			
+      </ul> -->
+	  <ul class="navbar-nav mx-auto">
+		<li class="nav-item dropdown active">
+		  <a class="nav-link" href="#!" data-toggle="dropdown">About
+			<i class="fa fa-angle-down"></i>
+			<span>/</span>
+		  </a>
+		  <!-- Dropdown list -->
+		  <ul class="dropdown-menu">
+			<li><a class="dropdown-item" href="#">Welcome Message</a></li>
+			<li><a class="dropdown-item" href="#">Why Attend 23<sup>rd</sup> GCA</a></li>
+			<li><a class="dropdown-item" href="#">Overview – West End Hotel</a></li>
+		
+		  </ul>
+		</li>
+		<li class="nav-item">
+		  <a class="nav-link" href="#">Organising Group
+			<span>/</span>
+		  </a>
+		</li>
+		<li class="nav-item dropdown">
+		  <a class="nav-link" href="#!" data-toggle="dropdown">Programs
+			<i class="fa fa-angle-down"></i>
+			<span>/</span>
+		  </a>
+		  <!-- Dropdown list -->
+		  <ul class="dropdown-menu">
+			<li><a class="dropdown-item" href="#">Call For Papers</a></li>
+			<li><a class="dropdown-item" href="#" target="_blank">Program Schedule - AGFA 2024</a></li>
+			<li><a class="dropdown-item" href="#" target="_blank">Program Schedule - 23<sup>rd</sup> GCA</a></li>
+			<li><a class="dropdown-item" href="#">Speakers</a></li>
+		  </ul>
+		</li>
+		<li class="nav-item dropdown">
+		  <a class="nav-link" href="#!" data-toggle="dropdown">Partnership Category
+			<i class="fa fa-angle-down"></i>
+			<span>/</span>
+		  </a>
+		  <!-- Dropdown list -->
+		  <ul class="dropdown-menu">
+			<li><a class="dropdown-item" href="#">Financial Partnership</a></li>
+			<li><a class="dropdown-item" href="#">Know Our Partners</a></li>
+		  </ul>
+		</li>
+		<!-- <li class="nav-item dropdown">
+		  <a class="nav-link" href="#!" data-toggle="dropdown">Registration
+			<i class="fa fa-angle-down"></i>
+		  </a>
+		  <ul class="dropdown-menu">
+			<li><a class="dropdown-item" href="#">Registration Guidelines</a></li>
+		  </ul>
+		</li> -->
+		<li class="nav-item dropdown">
+		  <a class="nav-link" href="#!" data-toggle="dropdown">Accommodation
+			<i class="fa fa-angle-down"></i>
+		  </a>
+		  <!-- Dropdown list -->
+		  <ul class="dropdown-menu">
+			<!-- Add Accommodation links here -->
+			<li><a class="dropdown-item" href="#">Road Map</a></li>
+			<li><a class="dropdown-item" href="#">Room Booking</a></li>
+		  </ul>
+		</li>
+		<li class="nav-item nav-reg-li"><a class="btn btn-primary">Registration</a></li>
+	  </ul>
+	  
+	  
+      <!-- <a href="contact.html" class="ticket">
+        <img src="images/icon/ticket.png" alt="ticket">
+        <span>Register Now</span>
+      </a> -->
+    </div>
+  </div>
+</nav>
+
+<!--====  End of Navigation Section  ====-->
+
+<!--============================
+=            Banner            =
+=============================-->
+
+<section class="banner bg-banner-one overlay">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<!-- Content Block -->
+				<div class="block text-center">
+					<!-- Coundown Timer -->
+				
+					<h1>23<sup>rd</sup> Global Conference of Actuaries</h1>
+					<h6>12-14 February 2024, The Westin Mumbai Powai Lake, Mumbai - 400 087</h6>
+					<div class="flex-w flex-sa-m cd100 bor1 p-10 respon1">
+						<div class="flex-col-c-m wsize2 m-b-0">
+						<span class="l1-txt2 p-b-4 days" id="days"></span>
+						<span class="m2-txt2">Days</span>
+						</div>
+						<span class="l1-txt2 p-b-10">:</span>
+						<div class="flex-col-c-m wsize2 m-b-0">
+						<span class="l1-txt2 p-b-4 hours" id="hours"></span>
+						<span class="m2-txt2">Hours</span>
+						</div>
+						<span class="l1-txt2 p-b-10 respon2">:</span>
+						<div class="flex-col-c-m wsize2 m-b-0">
+						<span class="l1-txt2 p-b-4 minutes" id="minutes"></span>
+						<span class="m2-txt2">Minutes</span>
+						</div>
+						<span class="l1-txt2 p-b-10">:</span>
+						<div class="flex-col-c-m wsize2 m-b-0">
+						<span class="l1-txt2 p-b-4 seconds" id="seconds"></span>
+						<span class="m2-txt2">Seconds</span>
+						</div>
+					</div>
+					<!-- Action Button -->
+					<a href="#" class="btn btn-white-md">Register now</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
+		<defs>
+		  <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z">
+		</path></defs>
+		<g class="wave1">
+		  <use xlink:href="#wave-path" x="50" y="3" fill="rgba(255,255,255, .1)">
+		</use></g>
+		<g class="wave2">
+		  <use xlink:href="#wave-path" x="50" y="0" fill="rgba(255,255,255, .2)">
+		</use></g>
+		<g class="wave3">
+		  <use xlink:href="#wave-path" x="50" y="9" fill="#fff">
+		</use></g>
+	  </svg>
+</section>
+	
+<!--====  End of Banner  ====-->
+
+<!--===========================
+=            About            =
+============================-->
+
+<section class="section about">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-4 col-md-6 align-self-center">
+				<div class="image-block bg-about">
+					<img class="img-fluid" src="images/speakers/president.png" alt="">
+					<div class="text-center img-block-title">
+						<h5>R Arunachalam</h5>
+						<p>President, Institute of Actuaries of India</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-8 col-md-6 align-self-center">
+				<div class="content-block">
+					<!-- <h2>About The <span class="alternate">Eventre</span></h2> -->
+					<h2>Presidential Address</h2>
+					<div class="description-one">
+						<p>
+							It gives me immense pleasure to cordially invite you to the 23rd Global Conference of Actuaries (GCA) and the Actuarial Gala Function & Awards (AGFA) 2024 scheduled from 12th to 14th February 2024 at The Westin Powai Lake in Mumbai.
+						</p><br>
+						<p>
+							In 2023, GCA made a much-awaited comeback post Covid pandemic and we saw an all-time high participation from our members. The line-up of the plenary and concurrent sessions covered a wide breadth of the topics such as Sustainability Dialogue, Indian Insurance at Amrit Kaal, changing roster of Actuarial Skillset to name a few.
+						</p>
+					</div>
+					<!-- <div class="description-two">
+						<p>
+							
+						</p>
+					</div> -->
+					<ul class="list-inline">
+						<li class="list-inline-item">
+							<a href="#" class="btn btn-main-md">Register Now</a>
+						</li>
+						<li class="list-inline-item">
+							<a href="#" class="btn btn-transparent-md">Read more</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--====  End of About  ====-->
+
+<!--==============================
+=            Speakers            =
+===============================-->
+
+<section class="section speakers bg-speaker overlay-lighter">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<!-- Section Title -->
+				<div class="section-title white">
+					<h3>Our <span class="alternate">Speakers</span></h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusm tempor incididunt ut labore</p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-3 col-md-4 col-sm-6">
+				<!-- Speaker 1 -->
+				<div class="speaker-item">
+					<div class="image">
+						<img src="images/speakers/gca/1.jpg" alt="speaker" class="speak-img-fluid">
+						<div class="primary-overlay"></div>
+						<div class="socials">
+							<ul class="list-inline">
+								<li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+								<li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+								<li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+								<li class="list-inline-item"><a href="#"><i class="fa fa-pinterest"></i></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="content text-center">
+						<h5><a href="single-speaker.html">Shri Saurabh Mishra</a></h5>
+						<p>Joint Secretary To The Government Of India, Ministry Of Finance, Department Of Financial Services</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6">
+				<!-- Speaker 2 -->
+				<div class="speaker-item">
+					<div class="image">
+						<img src="images/speakers/gca/9.jpg" alt="speaker" class="speak-img-fluid">
+						<div class="primary-overlay"></div>
+						<div class="socials">
+							<ul class="list-inline">
+								<li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+								<li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+								<li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+								<li class="list-inline-item"><a href="#"><i class="fa fa-pinterest"></i></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="content text-center">
+						<h5><a href="single-speaker.html">Shri S. Bandyodhyay</a></h5>
+						<p>Chairperson Pension Fund Regulatory And Development Authority(PFRDA)</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6">
+				<!-- Speaker 3 -->
+				<div class="speaker-item">
+					<div class="image">
+						<img src="images/speakers/gca/3.jpg" alt="speaker" class="speak-img-fluid">
+						<div class="primary-overlay"></div>
+						<div class="socials">
+							<ul class="list-inline">
+								<li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+								<li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+								<li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+								<li class="list-inline-item"><a href="#"><i class="fa fa-pinterest"></i></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="content text-center">
+						<h5><a href="single-speaker.html">Shri M.R.Kumar</a></h5>
+						<p>Chairperson<br>LIC Of India</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6">
+				<!-- Speaker 4 -->
+				<div class="speaker-item">
+					<div class="image">
+						<img src="images/speakers/gca/4.jpg" alt="speaker" class="speak-img-fluid">
+						<div class="primary-overlay"></div>
+						<div class="socials">
+							<ul class="list-inline">
+								<li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+								<li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+								<li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+								<li class="list-inline-item"><a href="#"><i class="fa fa-pinterest"></i></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="content text-center">
+						<h5><a href="single-speaker.html">Micheline Dionne</a></h5>
+						<p>President<br>
+							The International Actuarial Association
+							</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6">
+				<!-- Speaker 5 -->
+				<div class="speaker-item">
+					<div class="image">
+						<img src="images/speakers/gca/5.png" alt="speaker" class="speak-img-fluid">
+						<div class="primary-overlay"></div>
+						<div class="socials">
+							<ul class="list-inline">
+								<li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+								<li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+								<li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+								<li class="list-inline-item"><a href="#"><i class="fa fa-pinterest"></i></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="content text-center">
+						<h5><a href="single-speaker.html">Mr. R. Arunachalam</a></h5>
+						<p>President<br>
+							Institute Of Actuaries Of India</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6">
+				<!-- Speaker 1 -->
+				<div class="speaker-item">
+					<div class="image">
+						<img src="images/speakers/gca/6.jpg" alt="speaker" class="speak-img-fluid">
+						<div class="primary-overlay"></div>
+						<div class="socials">
+							<ul class="list-inline">
+								<li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+								<li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+								<li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+								<li class="list-inline-item"><a href="#"><i class="fa fa-pinterest"></i></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="content text-center">
+						<h5><a href="single-speaker.html">Shri Debasish Panda</a></h5>
+						<p>Chairman<br>
+							Insurance Regulatory And Development Authority Of India(IRDAI)
+							</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6">
+				<!-- Speaker 7 -->
+				<div class="speaker-item">
+					<div class="image">
+						<img src="images/speakers/gca/7.jpg" alt="speaker" class="speak-img-fluid">
+						<div class="primary-overlay"></div>
+						<div class="socials">
+							<ul class="list-inline">
+								<li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+								<li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+								<li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+								<li class="list-inline-item"><a href="#"><i class="fa fa-pinterest"></i></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="content text-center">
+						<h5><a href="single-speaker.html">Devesh Srivastava</a></h5>
+						<p>Chairman & Managing Director<br>
+							GIC Re
+							</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6">
+				<!-- Speaker 8 -->
+				<div class="speaker-item">
+					<div class="image">
+						<img src="images/speakers/gca/8.jpg" alt="speaker" class="speak-img-fluid">
+						<div class="primary-overlay"></div>
+						<div class="socials">
+							<ul class="list-inline">
+								<li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+								<li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+								<li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+								<li class="list-inline-item"><a href="#"><i class="fa fa-pinterest"></i></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="content text-center">
+						<h5><a href="single-speaker.html">G. Srinivasan</a></h5>
+						<p>Director<br>National Insurance Academy</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--====  End of Speakers  ====-->
+
+<!--==============================
+=            Schedule            =
+===============================-->
+
+<section class="section schedule">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class="section-title">
+					<h3>Event <span class="alternate">Schedule</span></h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusm tempor incididunt ut labore</p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12">
+				<div class="schedule-tab">
+					<ul class="nav nav-pills text-center">
+					  <li class="nav-item">
+					    <a class="nav-link active" href="#nov20" data-toggle="pill">
+					    	Day-01
+					    	<span>04 March 2024</span>
+					    </a>
+					  </li>
+					  <li class="nav-item">
+					    <a class="nav-link" href="#nov21" data-toggle="pill">
+							Day-02
+					    	<span>05 March 2024</span>
+					    </a>
+					  </li>
+					  <li class="nav-item">
+					    <a class="nav-link" href="#nov22" data-toggle="pill">
+							Day-03
+					    	<span>06 March 2024</span>
+					    </a>
+					  </li>
+					</ul>
+				</div>
+				<div class="schedule-contents bg-schedule">
+					<div class="tab-content" id="pills-tabContent">
+					  <div class="tab-pane fade show active schedule-item" id="nov20">
+					  	<!-- Headings -->
+					  	<ul class="m-0 p-0">
+					  		<li class="headings">
+					  			<div class="time">Time</div>
+					  			<div class="speaker">Speaker</div>
+					  			<div class="subject">Subject</div>
+					  			<div class="venue">Venue</div>
+					  		</li>
+					  		<!-- Schedule Details -->
+					  		<li class="schedule-details">
+					  			<div class="block">
+					  				<!-- time -->
+							  		<div class="time">
+							  			<i class="fa fa-clock-o"></i>
+							  			<span class="time">9.00 AM</span>
+							  		</div>
+							  		<!-- Speaker -->
+							  		<div class="speaker">
+							  			<img src="images/speakers/gca/" alt="speaker-thumb-one">
+										<span class="name">Samanta Doe</span>
+							  		</div>
+							  		<!-- Subject -->
+							  		<div class="subject">Introduction to Wp</div>
+							  		<!-- Venue -->
+							  		<div class="venue">Auditorium A</div>
+					  			</div>
+					  		</li>
+					  		<!-- Schedule Details -->
+					  		<li class="schedule-details">
+					  			<div class="block">
+						  			<!-- time -->
+							  		<div class="time">
+							  			<i class="fa fa-clock-o"></i>
+							  			<span class="time">10.00 AM</span>
+							  		</div>
+							  		<!-- Speaker -->
+							  		<div class="speaker">
+							  			<img src="images/speakers/speaker-thumb-two.jpg" alt="speaker-thumb-two">
+										<span class="name">Zerad Pawel</span>
+							  		</div>
+							  		<!-- Subject -->
+							  		<div class="subject">Principle of Wp</div>
+							  		<!-- Venue -->
+							  		<div class="venue">Auditorium B</div>
+					  			</div>
+					  		</li>
+					  		<!-- Schedule Details -->
+					  		<li class="schedule-details">
+					  			<div class="block">
+						  			<!-- time -->
+							  		<div class="time">
+							  			<i class="fa fa-clock-o"></i>
+							  			<span class="time">12.00 AM</span>
+							  		</div>
+							  		<!-- Speaker -->
+							  		<div class="speaker">
+							  			<img src="images/speakers/speaker-thumb-three.jpg" alt="speaker-thumb-three">
+										<span class="name">Henry Mong</span>
+							  		</div>
+							  		<!-- Subject -->
+							  		<div class="subject">Wp Requirements</div>
+							  		<!-- Venue -->
+							  		<div class="venue">Auditorium C</div>
+					  			</div>
+					  		</li>
+					  		<!-- Schedule Details -->
+					  		<li class="schedule-details">
+					  			<div class="block">
+						  			<!-- time -->
+							  		<div class="time">
+							  			<i class="fa fa-clock-o"></i>
+							  			<span class="time">2.00 PM</span>
+							  		</div>
+							  		<!-- Speaker -->
+							  		<div class="speaker">
+							  			<img src="images/speakers/speaker-thumb-four.jpg" alt="speaker-thumb-four">
+										<span class="name">Baily Leo</span>
+							  		</div>
+							  		<!-- Subject -->
+							  		<div class="subject">Introduction to Wp</div>
+							  		<!-- Venue -->
+							  		<div class="venue">Auditorium D</div>
+					  			</div>
+					  		</li>
+					  		<!-- Schedule Details -->
+					  		<li class="schedule-details">
+					  			<div class="block">
+						  			<!-- time -->
+							  		<div class="time">
+							  			<i class="fa fa-clock-o"></i>
+							  			<span class="time">3.00 PM</span>
+							  		</div>
+							  		<!-- Speaker -->
+							  		<div class="speaker">
+							  			<img src="images/speakers/speaker-thumb-five.jpg" alt="speaker-thumb-five">
+										<span class="name">Lee Mun</span>
+							  		</div>
+							  		<!-- Subject -->
+							  		<div class="subject">Useful tips for Wp</div>
+							  		<!-- Venue -->
+							  		<div class="venue">Auditorium E</div>
+					  			</div>
+					  		</li>
+					  		<!-- Schedule Details -->
+					  		<li class="schedule-details">
+					  			<div class="block">
+						  			<!-- time -->
+							  		<div class="time">
+							  			<i class="fa fa-clock-o"></i>
+							  			<span class="time">3.00 PM</span>
+							  		</div>
+							  		<!-- Speaker -->
+							  		<div class="speaker">
+							  			<img src="images/speakers/speaker-thumb-six.jpg" alt="speaker-thumb-six">
+										<span class="name">Lee Mun</span>
+							  		</div>
+							  		<!-- Subject -->
+							  		<div class="subject">Useful tips for Wp</div>
+							  		<!-- Venue -->
+							  		<div class="venue">Auditorium E</div>
+					  			</div>
+					  		</li>
+					  	</ul>
+					  </div>
+					  <div class="tab-pane fade schedule-item" id="nov21">
+					  	<!-- Headings -->
+					  	<ul class="m-0 p-0">
+					  		<li class="headings">
+					  			<div class="time">Time</div>
+					  			<div class="speaker">Speaker</div>
+					  			<div class="subject">Subject</div>
+					  			<div class="venue">Venue</div>
+					  		</li>
+					  		<!-- Schedule Details -->
+					  		<li class="schedule-details">
+					  			<div class="block">
+					  				<!-- time -->
+							  		<div class="time">
+							  			<i class="fa fa-clock-o"></i>
+							  			<span class="time">9.00 AM</span>
+							  		</div>
+							  		<!-- Speaker -->
+							  		<div class="speaker">
+							  			<img src="images/speakers/speaker-thumb-one.jpg" alt="speaker-thumb-one">
+										<span class="name">Samanta Doe</span>
+							  		</div>
+							  		<!-- Subject -->
+							  		<div class="subject">Introduction to Wp</div>
+							  		<!-- Venue -->
+							  		<div class="venue">Auditorium A</div>
+					  			</div>
+					  		</li>
+					  		<!-- Schedule Details -->
+					  		<li class="schedule-details">
+					  			<div class="block">
+						  			<!-- time -->
+							  		<div class="time">
+							  			<i class="fa fa-clock-o"></i>
+							  			<span class="time">10.00 AM</span>
+							  		</div>
+							  		<!-- Speaker -->
+							  		<div class="speaker">
+							  			<img src="images/speakers/speaker-thumb-two.jpg" alt="speaker-thumb-two">
+										<span class="name">Zerad Pawel</span>
+							  		</div>
+							  		<!-- Subject -->
+							  		<div class="subject">Principle of Wp</div>
+							  		<!-- Venue -->
+							  		<div class="venue">Auditorium B</div>
+					  			</div>
+					  		</li>
+					  		<!-- Schedule Details -->
+					  		<li class="schedule-details">
+					  			<div class="block">
+						  			<!-- time -->
+							  		<div class="time">
+							  			<i class="fa fa-clock-o"></i>
+							  			<span class="time">12.00 AM</span>
+							  		</div>
+							  		<!-- Speaker -->
+							  		<div class="speaker">
+							  			<img src="images/speakers/speaker-thumb-three.jpg" alt="speaker-thumb-three">
+										<span class="name">Henry Mong</span>
+							  		</div>
+							  		<!-- Subject -->
+							  		<div class="subject">Wp Requirements</div>
+							  		<!-- Venue -->
+							  		<div class="venue">Auditorium C</div>
+					  			</div>
+					  		</li>
+					  		<!-- Schedule Details -->
+					  		<li class="schedule-details">
+					  			<div class="block">
+						  			<!-- time -->
+							  		<div class="time">
+							  			<i class="fa fa-clock-o"></i>
+							  			<span class="time">2.00 PM</span>
+							  		</div>
+							  		<!-- Speaker -->
+							  		<div class="speaker">
+							  			<img src="images/speakers/speaker-thumb-four.jpg" alt="speaker-thumb-four">
+										<span class="name">Baily Leo</span>
+							  		</div>
+							  		<!-- Subject -->
+							  		<div class="subject">Introduction to Wp</div>
+							  		<!-- Venue -->
+							  		<div class="venue">Auditorium D</div>
+					  			</div>
+					  		</li>
+					  		<!-- Schedule Details -->
+					  		<li class="schedule-details">
+					  			<div class="block">
+						  			<!-- time -->
+							  		<div class="time">
+							  			<i class="fa fa-clock-o"></i>
+							  			<span class="time">3.00 PM</span>
+							  		</div>
+							  		<!-- Speaker -->
+							  		<div class="speaker">
+							  			<img src="images/speakers/speaker-thumb-five.jpg" alt="speaker-thumb-five">
+										<span class="name">Lee Mun</span>
+							  		</div>
+							  		<!-- Subject -->
+							  		<div class="subject">Useful tips for Wp</div>
+							  		<!-- Venue -->
+							  		<div class="venue">Auditorium E</div>
+					  			</div>
+					  		</li>
+					  		<!-- Schedule Details -->
+					  		<li class="schedule-details">
+					  			<div class="block">
+						  			<!-- time -->
+							  		<div class="time">
+							  			<i class="fa fa-clock-o"></i>
+							  			<span class="time">3.00 PM</span>
+							  		</div>
+							  		<!-- Speaker -->
+							  		<div class="speaker">
+							  			<img src="images/speakers/speaker-thumb-six.jpg" alt="speaker-thumb-six">
+										<span class="name">Lee Mun</span>
+							  		</div>
+							  		<!-- Subject -->
+							  		<div class="subject">Useful tips for Wp</div>
+							  		<!-- Venue -->
+							  		<div class="venue">Auditorium E</div>
+					  			</div>
+					  		</li>
+					  	</ul>
+					  </div>
+					  <div class="tab-pane fade schedule-item" id="nov22">
+					  	<!-- Headings -->
+					  	<ul class="m-0 p-0">
+					  		<li class="headings">
+					  			<div class="time">Time</div>
+					  			<div class="speaker">Speaker</div>
+					  			<div class="subject">Subject</div>
+					  			<div class="venue">Venue</div>
+					  		</li>
+					  		<!-- Schedule Details -->
+					  		<li class="schedule-details">
+					  			<div class="block">
+					  				<!-- time -->
+							  		<div class="time">
+							  			<i class="fa fa-clock-o"></i>
+							  			<span class="time">9.00 AM</span>
+							  		</div>
+							  		<!-- Speaker -->
+							  		<div class="speaker">
+							  			<img src="images/speakers/speaker-thumb-one.jpg" alt="speaker-thumb-one">
+										<span class="name">Samanta Doe</span>
+							  		</div>
+							  		<!-- Subject -->
+							  		<div class="subject">Introduction to Wp</div>
+							  		<!-- Venue -->
+							  		<div class="venue">Auditorium A</div>
+					  			</div>
+					  		</li>
+					  		<!-- Schedule Details -->
+					  		<li class="schedule-details">
+					  			<div class="block">
+						  			<!-- time -->
+							  		<div class="time">
+							  			<i class="fa fa-clock-o"></i>
+							  			<span class="time">10.00 AM</span>
+							  		</div>
+							  		<!-- Speaker -->
+							  		<div class="speaker">
+							  			<img src="images/speakers/speaker-thumb-two.jpg" alt="speaker-thumb-two">
+										<span class="name">Zerad Pawel</span>
+							  		</div>
+							  		<!-- Subject -->
+							  		<div class="subject">Principle of Wp</div>
+							  		<!-- Venue -->
+							  		<div class="venue">Auditorium B</div>
+					  			</div>
+					  		</li>
+					  		<!-- Schedule Details -->
+					  		<li class="schedule-details">
+					  			<div class="block">
+						  			<!-- time -->
+							  		<div class="time">
+							  			<i class="fa fa-clock-o"></i>
+							  			<span class="time">12.00 AM</span>
+							  		</div>
+							  		<!-- Speaker -->
+							  		<div class="speaker">
+							  			<img src="images/speakers/speaker-thumb-three.jpg" alt="speaker-thumb-three">
+										<span class="name">Henry Mong</span>
+							  		</div>
+							  		<!-- Subject -->
+							  		<div class="subject">Wp Requirements</div>
+							  		<!-- Venue -->
+							  		<div class="venue">Auditorium C</div>
+					  			</div>
+					  		</li>
+					  		<!-- Schedule Details -->
+					  		<li class="schedule-details">
+					  			<div class="block">
+						  			<!-- time -->
+							  		<div class="time">
+							  			<i class="fa fa-clock-o"></i>
+							  			<span class="time">2.00 PM</span>
+							  		</div>
+							  		<!-- Speaker -->
+							  		<div class="speaker">
+							  			<img src="images/speakers/speaker-thumb-four.jpg" alt="speaker-thumb-four">
+										<span class="name">Baily Leo</span>
+							  		</div>
+							  		<!-- Subject -->
+							  		<div class="subject">Introduction to Wp</div>
+							  		<!-- Venue -->
+							  		<div class="venue">Auditorium D</div>
+					  			</div>
+					  		</li>
+					  		<!-- Schedule Details -->
+					  		<li class="schedule-details">
+					  			<div class="block">
+						  			<!-- time -->
+							  		<div class="time">
+							  			<i class="fa fa-clock-o"></i>
+							  			<span class="time">3.00 PM</span>
+							  		</div>
+							  		<!-- Speaker -->
+							  		<div class="speaker">
+							  			<img src="images/speakers/speaker-thumb-five.jpg" alt="speaker-thumb-five">
+										<span class="name">Lee Mun</span>
+							  		</div>
+							  		<!-- Subject -->
+							  		<div class="subject">Useful tips for Wp</div>
+							  		<!-- Venue -->
+							  		<div class="venue">Auditorium E</div>
+					  			</div>
+					  		</li>
+					  		<!-- Schedule Details -->
+					  		<li class="schedule-details">
+					  			<div class="block">
+						  			<!-- time -->
+							  		<div class="time">
+							  			<i class="fa fa-clock-o"></i>
+							  			<span class="time">3.00 PM</span>
+							  		</div>
+							  		<!-- Speaker -->
+							  		<div class="speaker">
+							  			<img src="images/speakers/speaker-thumb-six.jpg" alt="speaker-thumb-six">
+										<span class="name">Lee Mun</span>
+							  		</div>
+							  		<!-- Subject -->
+							  		<div class="subject">Useful tips for Wp</div>
+							  		<!-- Venue -->
+							  		<div class="venue">Auditorium E</div>
+					  			</div>
+					  		</li>
+					  	</ul>
+					  </div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--====  End of Schedule  ====-->
+
+<!--=============================
+=            Feature            =
+==============================-->
+
+<section class="ticket-feature">
+	<div class="container-fluid m-0 p-0">
+		<div class="row p-0 m-0">
+			<div class="col-lg-7 p-0 m-0">
+				<div class="block bg-timer overlay-dark text-center">
+					<div class="section-title white m-0">
+						<h3>Limited Audience <span class="alternate">Seats</span></h3>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusm</p>
+					</div>
+					<!-- Coundown Timer -->
+					<div class="timer"></div>
+					<a href="" class="btn btn-main-md">Register Now</a>
+				</div>
+			</div>
+			<div class="col-lg-5 p-0">
+				<div class="block-2">
+					<div class="row no-gutters">
+						<div class="col-6">
+							<!-- Service item -->
+							<div class="service-item">
+								<i class="fa fa-microphone"></i>
+								<h5>30 Speakers</h5>
+							</div>
+						</div>
+						<div class="col-6">
+							<!-- Service item -->
+							<div class="service-item">
+								<i class="fa fa-flag"></i>
+								<h5>500 + Seats</h5>
+							</div>
+						</div>
+						<div class="col-6">
+							<!-- Service item -->
+							<div class="service-item">
+								<i class="fa fa-users"></i>
+								<h5>120 + Partner</h5>
+							</div>
+						</div>
+						<div class="col-6">
+							<!-- Service item -->
+							<div class="service-item">
+								<i class="fa fa-calendar"></i>
+								<h5>3 days event</h5>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--====  End of Feature  ====-->
+<!--==============================
+=            Schedule            =
+===============================-->
+
+<section class="section schedule two">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class="section-title">
+					<h3>Registration <span class="alternate">Rate</span></h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusm tempor incididunt ut labore
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-3">
+				<div class="schedule-tab">
+					<ul class="nav nav-pills text-center">
+						<li class="nav-item">
+							<a class="nav-link active" href="#nov20" data-toggle="pill">
+								Early Bird Rate
+								<span>Upto 10 Feb, 2024</span>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#nov21" data-toggle="pill">
+								Standard Rate
+								<span>11 Feb to 25 Feb, 2024</span>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#nov22" data-toggle="pill">
+								Late Entry Rate
+								<span>26 Feb, 2023 till event</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-lg-9">
+				<div class="schedule-contents">
+					<div class="tab-content" id="pills-tabContent">
+						<div class="tab-pane fade show active schedule-item" id="nov20">
+							<!-- Headings -->
+							<ul class="m-0 p-0">
+								<li class="headings text-center">
+									<div class="time">Categories</div>
+									<div class="speaker">Amount</div>
+									<div class="subject">Action</div>
+								</li>
+								<!-- Schedule Details -->
+								<li class="schedule-details text-center">
+									<div class="block">
+										<!-- time -->
+										<div class="time">
+											<span class="time">Student</span>
+										</div>
+										<!-- Speaker -->
+										<div class="speaker">
+											<span class="name">Rs. 8,000/-</span>
+										</div>
+										<!-- Subject -->
+										<div class="subject"><a href="#" class="btn btn-main-md">Register Now</a></div>
+									
+									</div>
+								</li>
+								<li class="schedule-details text-center">
+									<div class="block">
+										<!-- time -->
+										<div class="time">
+											<span class="time">Student above 70</span>
+										</div>
+										<!-- Speaker -->
+										<div class="speaker">
+											<span class="name">Rs. 4,000/-</span>
+										</div>
+										<!-- Subject -->
+										<div class="subject"><a href="#" class="btn btn-main-md">Register Now</a></div>
+								
+									</div>
+								</li>
+								<li class="schedule-details text-center">
+									<div class="block">
+										<!-- time -->
+										<div class="time">
+											<span class="time">Associates</span>
+										</div>
+										<!-- Speaker -->
+										<div class="speaker">
+											<span class="name">Rs. 15,000/-</span>
+										</div>
+										<!-- Subject -->
+										<div class="subject"><a href="#" class="btn btn-main-md">Register Now</a></div>
+								
+									</div>
+								</li>
+						
+								
+								
+							</ul>
+						</div>
+						<div class="tab-pane fade schedule-item" id="nov21">
+							
+							
+						</div>
+						<div class="tab-pane fade schedule-item" id="nov22">
+							
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+</section>
+
+<!--====  End of Schedule  ====-->
+
+
+<!--==============================
+=            Sponsors            =
+===============================-->
+
+<section class="sponsors section bg-sponsors overlay-white">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class="section-title">
+					<h3>Our <span class="alternate">Sponsors</span></h3>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusm tempor incididunt ut labore dolore</p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12">
+				<!-- Title -->
+				<div class="sponsor-title text-center">
+					<h5>Platinum Sponsors</h5>
+				</div>
+				<div class="block text-center">
+					<!-- Sponsors image list -->
+					<ul class="list-inline sponsors-list">
+						<li class="list-inline-item">
+							<div class="image-block text-center">
+								<a href="#">
+									<img src="images/sponsors/pt-spon-two.png" alt="sponsors-logo" class="img-fluid">
+								</a>
+							</div>
+						</li>
+						<li class="list-inline-item">
+							<div class="image-block text-center">
+								<a href="#">
+									<img src="images/sponsors/pt-spon-two.png" alt="sponsors-logo" class="img-fluid">
+								</a>
+							</div>
+						</li>
+						<li class="list-inline-item">
+							<div class="image-block text-center">
+								<a href="#">
+									<img src="images/sponsors/pt-spon-three.png" alt="sponsors-logo" class="img-fluid">
+								</a>
+							</div>
+						</li>
+						<li class="list-inline-item">
+							<div class="image-block text-center">
+								<a href="#">
+									<img src="images/sponsors/pt-spon-four.png" alt="sponsors-logo" class="img-fluid">
+								</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<!-- Title -->
+				<div class="sponsor-title text-center">
+					<h5>Gold Sponsors</h5>
+				</div>
+				<div class="block text-center">
+					<!-- Sponsors image list -->
+					<ul class="list-inline sponsors-list">
+						<li class="list-inline-item">
+							<div class="image-block text-center">
+								<a href="#">
+									<img src="images/sponsors/gl-spon-one.png" alt="sponsors-logo" class="img-fluid">
+								</a>
+							</div>
+						</li>
+						<li class="list-inline-item">
+							<div class="image-block text-center">
+								<a href="#">
+									<img src="images/sponsors/gl-spon-two.png" alt="sponsors-logo" class="img-fluid">
+								</a>
+							</div>
+						</li>
+						<li class="list-inline-item">
+							<div class="image-block text-center">
+								<a href="#">
+									<img src="images/sponsors/gl-spon-three.png" alt="sponsors-logo" class="img-fluid">
+								</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="sponsor-btn text-center">
+					<a href="#" class="btn btn-main-md">Become a sponsor</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--====  End of Sponsors  ====-->
+
+
+
+   <!--==========================
+      Venue Section
+    ============================-->
+    <section id="venue" class="wow fadeInUp">
+
+		<div class="container-fluid">
+  
+		  <div class="section-header">
+			<h2>Event Venue</h2>
+			<p>Event venue location info and gallery</p>
+		  </div>
+  
+		  <div class="row no-gutters">
+			<div class="col-lg-6 venue-map">
+	  
+			  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1051.4451848685253!2d72.90171430386731!3d19.134270108102875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b902868624b5%3A0x25c9dd6c629969da!2sThe%20Westin%20Mumbai%20Powai%20Lake!5e0!3m2!1sen!2sin!4v1698908276891!5m2!1sen!2sin"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			</div>
+  
+			<div class="col-lg-6 venue-info">
+			  <div class="row justify-content-center">
+				<div class="col-11 col-lg-8">
+				  <h3>THE WESTIN® MUMBAI POWAI LAKE</h3>
+				  <p>Iste nobis eum sapiente sunt enim dolores labore accusantium autem. Cumque beatae ipsam. Est quae sit qui voluptatem corporis velit. Qui maxime accusamus possimus. Consequatur sequi et ea suscipit enim nesciunt quia velit.</p>
+				</div>
+			  </div>
+			</div>
+		  </div>
+  
+		</div>
+  
+	    <div class="container-fluid venue-gallery-container aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+			<div class="row g-0">
+	
+			  <div class="col-lg-3 col-md-4">
+				<div class="venue-gallery">
+				  <a href="assets/img/venue-gallery/1.jpg" class="glightbox" data-gall="venue-gallery">
+					<img src="https://bootstrapmade.com/demo/templates/TheEvent/assets/img/venue-gallery/1.jpg" alt="" class="img-fluid">
+				  </a>
+				</div>
+			  </div>
+	
+			  <div class="col-lg-3 col-md-4">
+				<div class="venue-gallery">
+				  <a href="assets/img/venue-gallery/2.jpg" class="glightbox" data-gall="venue-gallery">
+					<img src="https://bootstrapmade.com/demo/templates/TheEvent/assets/img/venue-gallery/2.jpg" alt="" class="img-fluid">
+				  </a>
+				</div>
+			  </div>
+	
+			  <div class="col-lg-3 col-md-4">
+				<div class="venue-gallery">
+				  <a href="assets/img/venue-gallery/3.jpg" class="glightbox" data-gall="venue-gallery">
+					<img src="https://bootstrapmade.com/demo/templates/TheEvent/assets/img/venue-gallery/3.jpg" alt="" class="img-fluid">
+				  </a>
+				</div>
+			  </div>
+	
+			  <div class="col-lg-3 col-md-4">
+				<div class="venue-gallery">
+				  <a href="assets/img/venue-gallery/4.jpg" class="glightbox" data-gall="venue-gallery">
+					<img src="https://bootstrapmade.com/demo/templates/TheEvent/assets/img/venue-gallery/4.jpg" alt="" class="img-fluid">
+				  </a>
+				</div>
+			  </div>
+	
+			  <div class="col-lg-3 col-md-4">
+				<div class="venue-gallery">
+				  <a href="assets/img/venue-gallery/5.jpg" class="glightbox" data-gall="venue-gallery">
+					<img src="https://bootstrapmade.com/demo/templates/TheEvent/assets/img/venue-gallery/5.jpg" alt="" class="img-fluid">
+				  </a>
+				</div>
+			  </div>
+	
+			  <div class="col-lg-3 col-md-4">
+				<div class="venue-gallery">
+				  <a href="assets/img/venue-gallery/6.jpg" class="glightbox" data-gall="venue-gallery">
+					<img src="https://bootstrapmade.com/demo/templates/TheEvent/assets/img/venue-gallery/6.jpg" alt="" class="img-fluid">
+				  </a>
+				</div>
+			  </div>
+	
+			  <div class="col-lg-3 col-md-4">
+				<div class="venue-gallery">
+				  <a href="assets/img/venue-gallery/7.jpg" class="glightbox" data-gall="venue-gallery">
+					<img src="https://bootstrapmade.com/demo/templates/TheEvent/assets/img/venue-gallery/7.jpg" alt="" class="img-fluid">
+				  </a>
+				</div>
+			  </div>
+	
+			  <div class="col-lg-3 col-md-4">
+				<div class="venue-gallery">
+				  <a href="assets/img/venue-gallery/8.jpg" class="glightbox" data-gall="venue-gallery">
+					<img src="https://bootstrapmade.com/demo/templates/TheEvent/assets/img/venue-gallery/8.jpg" alt="" class="img-fluid">
+				  </a>
+				</div>
+			  </div>
+	
+			</div>
+		  </div>
+  
+	  </section>
+
+<!--============================
+=            Footer            =
+=============================-->
+
+<footer class="footer-main">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block text-center">
+          <div class="footer-logo">
+            <img src="../logopng.png" style="width: 20%" alt="logo" class="img-fluid">
+          </div>
+          <ul class="social-links-footer list-inline">
+            <li class="list-inline-item">
+              <a href="#"><i class="fa fa-facebook"></i></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#"><i class="fa fa-twitter"></i></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#"><i class="fa fa-instagram"></i></a>
+            </li>
+            <li class="list-inline-item">
+				<a href="#"><i class="fa fa-linkedin"></i></a>
+			</li>
+			
+			 
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- Subfooter -->
+<footer class="subfooter">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 align-self-center">
+        <div class="copyright-text">
+          <p><a href="index.html">IAI</a> &copy; 2023, Designed &amp; Developed by <a href="#">IT</a></p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <a href="#" class="to-top"><i class="fa fa-angle-up"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  <!-- JAVASCRIPTS -->
+  <!-- jQuey -->
+  <script src="plugins/jquery/jquery.min.js"></script>
+  <!-- Bootstrap 4 -->
+  <script src="plugins/bootstrap/bootstrap.min.js"></script>
+  <!-- Shuffle -->
+  <script src="plugins/shuffle/shuffle.min.js"></script>
+  <!-- Magnific Popup -->
+  <script src="plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
+  <!-- Slick Carousel -->
+  <script src="plugins/slick/slick.min.js"></script>
+  <!-- SyoTimer -->
+  <script src="plugins/syotimer/jquery.syotimer.min.js"></script>
+
+  <!-- Custom Script -->
+  <script src="js/script.js"></script>
+ 
+ 
+</body>
+
+</html>
+
+
+

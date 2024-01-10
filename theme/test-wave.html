@@ -1,0 +1,59 @@
+<style>
+    /*! CSS Used from: https://bootstrapmade.com/assets/vendor/animate.css/animate.min.css */
+.animate__animated{-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-duration:var(--animate-duration);animation-duration:var(--animate-duration);-webkit-animation-fill-mode:both;animation-fill-mode:both;}
+@media (prefers-reduced-motion:reduce),print{
+.animate__animated{-webkit-animation-duration:1ms!important;animation-duration:1ms!important;-webkit-transition-duration:1ms!important;transition-duration:1ms!important;-webkit-animation-iteration-count:1!important;animation-iteration-count:1!important;}
+}
+.animate__fadeInDown{-webkit-animation-name:fadeInDown;animation-name:fadeInDown;}
+.animate__fadeInUp{-webkit-animation-name:fadeInUp;animation-name:fadeInUp;}
+
+#hero{width:100%;overflow:hidden;position:relative;background:linear-gradient(0deg, rgb(42, 44, 57) 0%, rgb(51, 54, 74) 100%);padding:0;}
+#hero .carousel-container{display:flex;justify-content:center;align-items:center;flex-direction:column;text-align:center;position:relative;height:70vh;padding-top:60px;}
+#hero h2{color:#fff;margin-bottom:30px;font-size:48px;font-weight:700;}
+#hero p{width:80%;animation-delay:0.4s;margin:0 auto 30px auto;color:#fff;}
+#hero .carousel-control-prev,#hero .carousel-control-next{width:10%;}
+#hero .carousel-control-next-icon,#hero .carousel-control-prev-icon{background:none;font-size:48px;line-height:1;width:auto;height:auto;}
+#hero .btn-get-started{font-family:"Raleway", sans-serif;font-weight:500;font-size:14px;letter-spacing:1px;display:inline-block;padding:12px 32px;border-radius:50px;transition:0.5s;line-height:1;margin:10px;color:#fff;animation-delay:0.8s;border:2px solid #ef6603;}
+#hero .btn-get-started:hover{background:#ef6603;color:#fff;text-decoration:none;}
+@media (min-width: 1024px){
+#hero p{width:60%;}
+#hero .carousel-control-prev,#hero .carousel-control-next{width:5%;}
+}
+@media (max-width: 768px){
+#hero .carousel-container{height:90vh;}
+#hero h2{font-size:28px;}
+}
+.hero-waves{display:block;width:100%;height:60px;position:relative;}
+.wave1 use{animation:move-forever1 10s linear infinite;animation-delay:-2s;}
+.wave2 use{animation:move-forever2 8s linear infinite;animation-delay:-2s;}
+.wave3 use{animation:move-forever3 6s linear infinite;animation-delay:-2s;}
+section{padding:60px 0;overflow:hidden;}
+/*! keyframes */
+@-webkit-keyframes fadeInDown{0%{opacity:0;-webkit-transform:translate3d(0,-100%,0);transform:translate3d(0,-100%,0);}to{opacity:1;-webkit-transform:translateZ(0);transform:translateZ(0);}}
+@keyframes fadeInDown{0%{opacity:0;-webkit-transform:translate3d(0,-100%,0);transform:translate3d(0,-100%,0);}to{opacity:1;-webkit-transform:translateZ(0);transform:translateZ(0);}}
+@-webkit-keyframes fadeInUp{0%{opacity:0;-webkit-transform:translate3d(0,100%,0);transform:translate3d(0,100%,0);}to{opacity:1;-webkit-transform:translateZ(0);transform:translateZ(0);}}
+@keyframes fadeInUp{0%{opacity:0;-webkit-transform:translate3d(0,100%,0);transform:translate3d(0,100%,0);}to{opacity:1;-webkit-transform:translateZ(0);transform:translateZ(0);}}
+@keyframes move-forever1{0%{transform:translate(85px, 0%);}100%{transform:translate(-90px, 0%);}}
+@keyframes move-forever2{0%{transform:translate(-90px, 0%);}100%{transform:translate(85px, 0%);}}
+@keyframes move-forever3{0%{transform:translate(-90px, 0%);}100%{transform:translate(85px, 0%);}}
+</style>
+
+<section id="hero" class="d-flex flex-column justify-content-end align-items-center">
+    <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
+      <defs>
+        <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z">
+      </path></defs>
+      <g class="wave1">
+        <use xlink:href="#wave-path" x="50" y="3" fill="rgba(255,255,255, .1)">
+      </use></g>
+      <g class="wave2">
+        <use xlink:href="#wave-path" x="50" y="0" fill="rgba(255,255,255, .2)">
+      </use></g>
+      <g class="wave3">
+        <use xlink:href="#wave-path" x="50" y="9" fill="#fff">
+      </use></g>
+    </svg>
+
+    
+    <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 100" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(255, 255, 255, 0)" offset="0%"></stop><stop stop-color="rgba(255, 179, 11, 0)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,80L26.7,80C53.3,80,107,80,160,75C213.3,70,267,60,320,55C373.3,50,427,50,480,53.3C533.3,57,587,63,640,56.7C693.3,50,747,30,800,28.3C853.3,27,907,43,960,56.7C1013.3,70,1067,80,1120,78.3C1173.3,77,1227,63,1280,60C1333.3,57,1387,63,1440,70C1493.3,77,1547,83,1600,81.7C1653.3,80,1707,70,1760,70C1813.3,70,1867,80,1920,78.3C1973.3,77,2027,63,2080,53.3C2133.3,43,2187,37,2240,41.7C2293.3,47,2347,63,2400,63.3C2453.3,63,2507,47,2560,35C2613.3,23,2667,17,2720,15C2773.3,13,2827,17,2880,30C2933.3,43,2987,67,3040,75C3093.3,83,3147,77,3200,75C3253.3,73,3307,77,3360,71.7C3413.3,67,3467,53,3520,41.7C3573.3,30,3627,20,3680,21.7C3733.3,23,3787,37,3813,43.3L3840,50L3840,100L3813.3,100C3786.7,100,3733,100,3680,100C3626.7,100,3573,100,3520,100C3466.7,100,3413,100,3360,100C3306.7,100,3253,100,3200,100C3146.7,100,3093,100,3040,100C2986.7,100,2933,100,2880,100C2826.7,100,2773,100,2720,100C2666.7,100,2613,100,2560,100C2506.7,100,2453,100,2400,100C2346.7,100,2293,100,2240,100C2186.7,100,2133,100,2080,100C2026.7,100,1973,100,1920,100C1866.7,100,1813,100,1760,100C1706.7,100,1653,100,1600,100C1546.7,100,1493,100,1440,100C1386.7,100,1333,100,1280,100C1226.7,100,1173,100,1120,100C1066.7,100,1013,100,960,100C906.7,100,853,100,800,100C746.7,100,693,100,640,100C586.7,100,533,100,480,100C426.7,100,373,100,320,100C266.7,100,213,100,160,100C106.7,100,53,100,27,100L0,100Z"></path><defs><linearGradient id="sw-gradient-1" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(255, 232.593, 225.397, 0)" offset="0%"></stop><stop stop-color="rgba(255, 255, 255, 0)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 50px); opacity:0.9" fill="url(#sw-gradient-1)" d="M0,20L26.7,20C53.3,20,107,20,160,21.7C213.3,23,267,27,320,28.3C373.3,30,427,30,480,40C533.3,50,587,70,640,71.7C693.3,73,747,57,800,53.3C853.3,50,907,60,960,68.3C1013.3,77,1067,83,1120,86.7C1173.3,90,1227,90,1280,83.3C1333.3,77,1387,63,1440,61.7C1493.3,60,1547,70,1600,65C1653.3,60,1707,40,1760,36.7C1813.3,33,1867,47,1920,51.7C1973.3,57,2027,53,2080,56.7C2133.3,60,2187,70,2240,61.7C2293.3,53,2347,27,2400,16.7C2453.3,7,2507,13,2560,18.3C2613.3,23,2667,27,2720,28.3C2773.3,30,2827,30,2880,28.3C2933.3,27,2987,23,3040,31.7C3093.3,40,3147,60,3200,60C3253.3,60,3307,40,3360,41.7C3413.3,43,3467,67,3520,75C3573.3,83,3627,77,3680,61.7C3733.3,47,3787,23,3813,11.7L3840,0L3840,100L3813.3,100C3786.7,100,3733,100,3680,100C3626.7,100,3573,100,3520,100C3466.7,100,3413,100,3360,100C3306.7,100,3253,100,3200,100C3146.7,100,3093,100,3040,100C2986.7,100,2933,100,2880,100C2826.7,100,2773,100,2720,100C2666.7,100,2613,100,2560,100C2506.7,100,2453,100,2400,100C2346.7,100,2293,100,2240,100C2186.7,100,2133,100,2080,100C2026.7,100,1973,100,1920,100C1866.7,100,1813,100,1760,100C1706.7,100,1653,100,1600,100C1546.7,100,1493,100,1440,100C1386.7,100,1333,100,1280,100C1226.7,100,1173,100,1120,100C1066.7,100,1013,100,960,100C906.7,100,853,100,800,100C746.7,100,693,100,640,100C586.7,100,533,100,480,100C426.7,100,373,100,320,100C266.7,100,213,100,160,100C106.7,100,53,100,27,100L0,100Z"></path><defs><linearGradient id="sw-gradient-2" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(255, 255, 255, 0)" offset="0%"></stop><stop stop-color="rgba(255, 179, 11, 0)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 100px); opacity:0.8" fill="url(#sw-gradient-2)" d="M0,0L26.7,11.7C53.3,23,107,47,160,46.7C213.3,47,267,23,320,15C373.3,7,427,13,480,16.7C533.3,20,587,20,640,26.7C693.3,33,747,47,800,53.3C853.3,60,907,60,960,56.7C1013.3,53,1067,47,1120,43.3C1173.3,40,1227,40,1280,35C1333.3,30,1387,20,1440,28.3C1493.3,37,1547,63,1600,63.3C1653.3,63,1707,37,1760,28.3C1813.3,20,1867,30,1920,33.3C1973.3,37,2027,33,2080,40C2133.3,47,2187,63,2240,63.3C2293.3,63,2347,47,2400,40C2453.3,33,2507,37,2560,41.7C2613.3,47,2667,53,2720,46.7C2773.3,40,2827,20,2880,10C2933.3,0,2987,0,3040,11.7C3093.3,23,3147,47,3200,60C3253.3,73,3307,77,3360,65C3413.3,53,3467,27,3520,13.3C3573.3,0,3627,0,3680,13.3C3733.3,27,3787,53,3813,66.7L3840,80L3840,100L3813.3,100C3786.7,100,3733,100,3680,100C3626.7,100,3573,100,3520,100C3466.7,100,3413,100,3360,100C3306.7,100,3253,100,3200,100C3146.7,100,3093,100,3040,100C2986.7,100,2933,100,2880,100C2826.7,100,2773,100,2720,100C2666.7,100,2613,100,2560,100C2506.7,100,2453,100,2400,100C2346.7,100,2293,100,2240,100C2186.7,100,2133,100,2080,100C2026.7,100,1973,100,1920,100C1866.7,100,1813,100,1760,100C1706.7,100,1653,100,1600,100C1546.7,100,1493,100,1440,100C1386.7,100,1333,100,1280,100C1226.7,100,1173,100,1120,100C1066.7,100,1013,100,960,100C906.7,100,853,100,800,100C746.7,100,693,100,640,100C586.7,100,533,100,480,100C426.7,100,373,100,320,100C266.7,100,213,100,160,100C106.7,100,53,100,27,100L0,100Z"></path></svg>
+  </section>
