@@ -6,7 +6,6 @@ include "includes/config.php";
 $error  = false;
 $erroMessage = ''; 
 
-
 // Assuming you have a database connection here
 
 try {
@@ -18,6 +17,5 @@ try {
     http_response_code(500);
     echo "Error: " . $e->getMessage();
 }
-?>
 
 ?>

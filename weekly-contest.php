@@ -29,8 +29,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['submit_user'])) {
     // Validate member ID, contact number, and email
     if (isValidMemberId($member_id)) {
         // Check for duplicates based on member ID
-        $stmt = $pdo->prepare("SELECT user_id FROM users WHERE member_id = :member_id");
-        $stmt->bindParam(':member_id', $member_id, PDO::PARAM_INT);
+        $stmt = $pdo->prepare("SELECT id FROM users WHERE member_id = :member_id");
+        $stmt->bindParam(':member_id', $member_id);
         $stmt->execute();
         $result = $stmt->fetch(PDO::FETCH_ASSOC);
 
@@ -232,11 +232,24 @@ $userSubmitted = isset($_COOKIE['user_submitted']) && $_COOKIE['user_submitted']
                                             <div class="row mb-3">
                                                 <div class="col-md-6">
                                                     <label for="member_id" class="form-label">Member ID:</label>
-                                                    <input type="text" class="form-control" id="member_id" name="member_id" required>
+                                                    <input type="text" class="form-control" id="member_id" name="member_id">
                                                 </div>
                                                 <div class="col-md-6">
                                                     <label for="actuarial_assoc" class="form-label">Actuarial Association:</label>
-                                                    <input type="text" class="form-control" id="actuarial_assoc" name="actuarial_assoc" required>
+                                            
+                                                    <select class="form-control" id="actuarial_assoc" name="actuarial_assoc" required>
+                                                    <option value="">&lt;--Select Association--&gt;</option>
+                                                    <option>Institute &amp; Faculty of Actuaries</option>
+                                                    <option>Casualty Actuarial Society</option>
+                                                    <option>Actuarial Society of South Africa</option>
+                                                    <option>Society of Actuaries</option>
+                                                    <option>Institute of Chartered Accountants of India</option>
+                                                    <option>Chartered Financial Analyst</option>
+                                                    <option>Insurance Institute of India</option>
+                                                    <option">Institute of Insurance and Risk Management</option>
+                                                    <option">Indian Statistical Institute</option>
+
+                                                    </select>
                                                 </div>
                                             </div>
                                             <div class="row mb-3">
@@ -255,7 +268,9 @@ $userSubmitted = isset($_COOKIE['user_submitted']) && $_COOKIE['user_submitted']
                                                     <input type="tel" class="form-control" id="contact_no" name="contact_no" required>
                                                 </div>
                                             </div>
-                                            <button type="button" class="btn btn-primary" onclick="submitUserForm()">Submit User Form</button>
+                                            <div class="text-center">
+                                            <button type="submit" class="btn btn-primary"  name="submit_user">Submit User Form</button>
+                                            </div>
                                         </form>
                                     </div>
                                 </div>
@@ -302,7 +317,7 @@ $userSubmitted = isset($_COOKIE['user_submitted']) && $_COOKIE['user_submitted']
 
                                         <div class="">
                                             <div id="questionForm">
-                                                <h2>MCQ Questions</h2>
+                                                
                                                 <div class="question-container">
                                                     <p id="questionText"></p>
                                                 </div>
@@ -377,7 +392,7 @@ function fetchQuestions() {
         .then(response => response.json())
         .then(data => {
             mcqQuestions = data;
-            displayQuestion();
+            displayQuestion(mcqQuestions);
         })
         .catch(error => console.error("Error fetching questions:", error));
 }
